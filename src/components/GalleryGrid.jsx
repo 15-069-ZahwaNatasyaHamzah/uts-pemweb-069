@@ -1,6 +1,6 @@
 // src/components/GalleryGrid.jsx
 import React from 'react';
-import { DetailCard } from './index.js'; // Import dari barrel file
+import { DetailCard } from './index.js'; 
 
 const GalleryGrid = ({ images, toggleFavorite, favoriteUrls, loading }) => {
   

@@ -1,6 +1,5 @@
 // src/App.jsx
 import React, { useState, useEffect, useCallback } from 'react';
-// Import dari Barrel File untuk mengatasi bug path/caching
 import { 
     Header, 
     SearchForm, 
@@ -10,7 +9,6 @@ import {
 } from './components/index.js'; 
 
 
-// --- DATA HARDCODED UNTUK BREED ---
 const DOG_BREEDS = ['husky', 'pitbull', 'bulldog']; 
 const CAT_BREEDS = [
     { name: 'Bengal', id: 'beng' },
@@ -20,7 +18,6 @@ const CAT_BREEDS = [
 const DEFAULT_DOG_BREED = DOG_BREEDS[0];
 const DEFAULT_CAT_BREED_ID = CAT_BREEDS[0].id;
 
-// Custom Hook untuk localStorage (Wajib 5)
 const useLocalStorage = (key, defaultValue) => {
   const [value, setValue] = useState(() => {
     try {
@@ -60,7 +57,6 @@ function App() {
   }, [animalType, selectedBreed]);
 
 
-  // Ambil Gambar (Wajib 3)
   const fetchImages = useCallback(async () => {
     setLoading(true);
     let url = '';
@@ -100,7 +96,6 @@ function App() {
   }, [animalType, getCurrentBreedId]);
 
 
-  // Ambil Fakta (Wajib 4)
   const fetchFact = useCallback(async () => {
     const url = 'https://catfact.ninja/fact'; 
     try {
@@ -113,7 +108,6 @@ function App() {
     }
   }, [animalType]); 
 
-  // Toggle Favorit (Wajib 5)
   const toggleFavorite = (url) => {
     setFavoriteUrls(prevUrls => {
         if (prevUrls.includes(url)) {
@@ -124,9 +118,7 @@ function App() {
     });
   };
 
-  // --- SIDE EFFECTS (Perbaikan Transisi) ---
   
-  // Efek 1: Mengatur default breed dan memanggil fetchFact saat animalType berubah
   useEffect(() => {
     if (animalType === 'dog') {
       setSelectedBreed(DEFAULT_DOG_BREED);
@@ -137,7 +129,6 @@ function App() {
     fetchFact();
   }, [animalType, fetchFact]);
 
-  // Efek 2: Memanggil fetchImages saat selectedBreed atau animalType berubah
   useEffect(() => {
       if (selectedBreed) {
           fetchImages();
@@ -147,11 +138,9 @@ function App() {
 
   return (
     <div className="App">
-      {/* Wajib 1: Navigasi */}
       <Header animalType={animalType} setAnimalType={setAnimalType} />
       
       <main className="container">
-        {/* Wajib 2: Search Form */}
         <SearchForm 
           animalType={animalType}
           breeds={animalType === 'dog' ? DOG_BREEDS : CAT_BREEDS} 
@@ -159,7 +148,6 @@ function App() {
           currentBreed={selectedBreed} 
         />
         
-        {/* Wajib 3: Gallery Grid */}
         <GalleryGrid 
           images={images} 
           toggleFavorite={toggleFavorite} 
@@ -169,12 +157,10 @@ function App() {
 
         <hr />
 
-        {/* Wajib 4: Tabel Animal Facts dengan Refresh */}
         <DataTable fact={fact} refreshFact={fetchFact} />
 
         <hr />
         
-        {/* Tampilan List Favorit */}
         <h3>⭐️ Favorite Images List ({favoriteUrls.length})</h3>
         <div className="favorite-list">
           {favoriteUrls.map((url, index) => (

@@ -1,16 +1,25 @@
-# React + Vite
+# UTS Pengembangan Aplikasi Web: Animal Facts and Images
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Nama:** Zahwa Natasya Hamzah
+**NIM:** 123140069
 
-Currently, two official plugins are available:
+## Deskripsi Proyek
+Aplikasi galeri hewan berbasis ReactJS (Vite) yang menampilkan gambar anjing dan kucing secara acak, dengan fitur navigasi, filter breed, facts, dan penyimpanan favorit di LocalStorage.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Fitur Wajib
+1.  Navigasi switch Dog/Cat
+2.  Form dropdown breed
+3.  Gallery grid gambar acak
+4.  Animal facts dengan Refresh button
+5.  Favorite images (LocalStorage)
 
-## React Compiler
+## Technical Stack
+-   **Framework:** ReactJS (Vite)
+-   **Styling:** CSS Murni (Grid, Flexbox, Responsive Design)
+-   **Deployment:** Vercel
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## 🔗 Link Deployment Vercel
 
-## Expanding the ESLint configuration
+**Aplikasi Live:** https://uts-pemweb-069.vercel.app/ 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📸 Screenshot Aplikasi (animal-app.jpg)

@@ -22,4 +22,6 @@ Aplikasi galeri hewan berbasis ReactJS (Vite) yang menampilkan gambar anjing dan
 
 **Aplikasi Live:** https://uts-pemweb-069.vercel.app/ 
 
-## 📸 Screenshot Aplikasi (animal-app.jpg)
+## 📸 Screenshot Aplikasi
+
+![Aplikasi Animal Facts](animal-app.jpg)

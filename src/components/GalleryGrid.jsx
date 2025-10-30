@@ -8,8 +8,7 @@ const GalleryGrid = ({ images, toggleFavorite, favoriteUrls, loading }) => {
       return <p>Memuat gambar...</p>;
   }
 
-  // BARIS KRITIS 16 ANDA ADA DI SEKITAR SINI
-  if (!Array.isArray(images) || images.length === 0) { // <--- Cek Array.isArray harus ada!
+  if (!Array.isArray(images) || images.length === 0) { 
     return (
         <p>
             Tidak ada gambar ditemukan untuk breed ini. 
@@ -20,7 +19,7 @@ const GalleryGrid = ({ images, toggleFavorite, favoriteUrls, loading }) => {
 
   return (
     <div className="gallery-grid">
-      {images.map((url, index) => ( // <-- Baris 16 tempat error terjadi tanpa Array.isArray
+      {images.map((url, index) => ( 
         <DetailCard 
           key={url + index} 
           url={url} 

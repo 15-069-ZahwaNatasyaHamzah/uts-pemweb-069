@@ -1,10 +1,10 @@
 # UTS Pengembangan Aplikasi Web: Animal Facts and Images
 
-**Nama:** Zahwa Natasya Hamzah
-**NIM:** 123140069
+-   **Nama:** Zahwa Natasya Hamzah
+-   **NIM:** 123140069
 
 ## Deskripsi Proyek
-Aplikasi galeri hewan berbasis ReactJS (Vite) yang menampilkan gambar anjing dan kucing secara acak, dengan fitur navigasi, filter breed, facts, dan penyimpanan favorit di LocalStorage.
+Aplikasi ini adalah implementasi galeri hewan interaktif berbasis *Single-Page Application* (SPA) yang dibangun menggunakan **ReactJS** dan **Vite**. Proyek ini dirancang untuk mendemonstrasikan penguasaan **integrasi API asinkron** (`fetch API`), *State Management* melalui *React Hooks*, serta *styling* yang **responsive** menggunakan CSS Grid dan Flexbox. Aplikasi ini menampilkan gambar anjing/kucing acak dan fakta hewan, dengan fitur penting berupa navigasi dinamis, filter *breed*, dan penyimpanan *history* gambar favorit secara persisten di **LocalStorage**.
 
 ## Fitur Wajib
 1.  Navigasi switch Dog/Cat

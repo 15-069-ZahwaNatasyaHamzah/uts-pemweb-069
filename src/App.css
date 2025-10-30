@@ -19,7 +19,6 @@ body {
     padding: 20px;
 }
 
-/* Kombinasi Selector: Header > H1 */
 header {
     background-color: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -34,7 +33,6 @@ header h1 {
     margin-bottom: 10px;
 }
 
-/* Pseudo-class: Hover */
 header nav button {
     padding: 10px 20px;
     margin: 0 8px;
@@ -59,10 +57,9 @@ header nav button:disabled {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* --- Gallery Grid (CSS Grid) --- */
 .gallery-grid {
     display: grid;
-    /* CSS Grid: Responsive columns */
+  
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
     margin-top: 20px;
@@ -97,7 +94,6 @@ header nav button:disabled {
     background-color: #e0a800;
 }
 
-/* --- Data Table --- */
 .data-table {
     border: none;
     padding: 20px;
@@ -119,7 +115,6 @@ header nav button:disabled {
     padding: 0 20px;
 }
 
-/* --- Favorite List (Flexbox) --- */
 .favorite-list {
     display: flex;
     flex-wrap: wrap;
@@ -133,7 +128,6 @@ header nav button:disabled {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* --- Responsive Design (Media Query) --- */
 @media (max-width: 600px) {
     header h1 {
         font-size: 2rem;
